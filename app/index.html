@@ -26,63 +26,127 @@
     <!--[if lt IE 10]>
       <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
-
-    <!-- Standard button -->
-    <button type="button" class="btn btn-default">Default</button>
-
-    <!-- Provides extra visual weight and identifies the primary action in a set of buttons -->
-    <button type="button" class="btn btn-primary">Primary</button>
-
-    <!-- Indicates a successful or positive action -->
-    <button type="button" class="btn btn-success">Success</button>
-
-    <!-- Contextual button for informational alert messages -->
-    <button type="button" class="btn btn-info">Info</button>
-
-    <!-- Indicates caution should be taken with this action -->
-    <button type="button" class="btn btn-warning">Warning</button>
-
-    <!-- Indicates a dangerous or potentially negative action -->
-    <button type="button" class="btn btn-danger">Danger</button>
-
-    <!-- Deemphasize a button by making it look like a link while maintaining button behavior -->
-    <button type="button" class="btn btn-link">Link</button>
-
-    <div class="hero-unit">
-        <h1>'Allo, 'Allo!</h1>
-        <p>You now have</p>
-        <ul>
-            <li>HTML5 Boilerplate</li>
-            <li>Sass</li>
-            <li>Modernizr</li>
-        </ul>
+<div class="navbar navbar-inverse">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="index.html">
+                    <span id="logo">C  K  H  - Club de Karate Hispanidad</span>
+                </a>
+            </div>
+            <div class="navbar-collapse collapse">
+                <ul class="nav navbar-nav">
+                    <li>
+                        <a href="index.html">Inicio</a>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Actividades
+                            <b class="caret"></b>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a href="katas.html">Katas</a>
+                            </li>
+                            <li>
+                                <a href="tecnica.html">Tecnica</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="cinturones.html">Cinturones</a>
+                    </li>
+                    <li class="active">
+                        <a href="formulario.html">Contacto</a>
+                    </li>
+                </ul>
+            </div>
+            <!--/.navbar-collapse -->
+        </div>
     </div>
+    <div class="container">
+        <h1>Formulario</h1>
+        <form class="form-horizontal" id="formulario" name="formulario">
+            <fieldset>
+                <!-- Form Name -->
+                <legend>Informacion de contacto</legend>
+                <!-- Text input NOMBRE-->
+                <div class="form-group">
+                    <label class="control-label" for="nombre">Nombre</label>
+                    <span class="required"> *</span>
+                    <div class="nombre">
+                        <input id="nombre" name="nombre" placeholder="nombre" class="form-control input-md" type="text" required>
+                    </div>
+                </div>
+                <!-- Text input APELLIDOS-->
+                <div class="form-group">
+                    <label class="control-label" for="apellidos">Apellidos</label>
+                    <span class="required"> *</span>
+                    <div class="">
+                        <input id="apellidos" name="apellidos" placeholder="apellidos" class="form-control input-md" type="text" required>
+                    </div>
+                </div>
+                <!-- Text input TELEFONO-->
+                <div class="form-group">
+                    <label class="control-label" for="telefono">Telefono</label>
+                    <div class="">
+                        <input id="telefono" name="telefono" placeholder="telefono" maxlength="9" class="form-control input-md" type="text" required>
+                    </div>
+                </div>
+                <!-- Text input EMAIL-->
+                <div class="form-group">
+                    <label class="control-label" for="email1">Email</label>
+                    <span class="required"> *</span>
+                    <div class="">
+                        <input id="email1" name="email1" placeholder="email" class="form-control input-md" type="text" required>
+                    </div>
+                </div>
+                <!-- Text input REPETIR EMAIL-->
+                <div class="form-group">
+                    <label class="control-label" for="email2">Repetir Email</label>
+                    <div class="">
+                        <input id="repemail" name="email2" placeholder="repetirEmail" class="form-control input-md" type="text">
+                    </div>
+                </div>
+                <!--BOTON ENVIAR >-->
+                <div class="form-group">
+                    <div class="">
+                        <button type="submit" id="enviar" name="enviar" class="btn btn-default">ENVIAR</button>
+                    </div>
+                </div>
+            </fieldset>
+            <p class="info"><strong>Si quieres consultarnos, rellena este formulario y te enviaremos detalles sobre las clases, ciclos, etc.</strong></p>
+        </form>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-5 col-xs-4">
+            </div>
+            <img src="images/Oso.jpg" alt="oso del formulario">
+        </div>
+    </div>
+    <!-- /container -->
+    <footer>
+        <div class="container">
 
-    <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
-    <script>
-    (function(b, o, i, l, e, r) {
-        b.GoogleAnalyticsObject = l;
-        b[l] || (b[l] =
-            function() {
-                (b[l].q = b[l].q || []).push(arguments)
-            });
-        b[l].l = +new Date;
-        e = o.createElement(i);
-        r = o.getElementsByTagName(i)[0];
-        e.src = '//www.google-analytics.com/analytics.js';
-        r.parentNode.insertBefore(e, r)
-    }(window, document, 'script', 'ga'));
-    ga('create', 'UA-XXXXX-X');
-    ga('send', 'pageview');
-    </script>
-
-
+            <a href="#"><img name="sprite" src="../icons/facebook.png"></a>
+            <a href="#"><img name="sprite" src="../icons/linkedin.png"></a>
+            <a href="#"><img name="sprite" src="../icons/twitter.png"></a>
+            
+            <p class="pull-right">Copyright @ 2014 | Website realizada por
+                <a href="https://github.com/sacratos/sitio-web">sacratos :3</a></p>
+            
+        </div>
+    </footer>
     <!-- build:js scripts/vendor.js -->
     <!-- bower:js -->
     <script src="../bower_components/jquery/dist/jquery.js"></script>
+    <script src="../bower_components/jquery-validate/dist/jquery.validate.js"></script>
     <!-- endbower -->
     <!-- endbuild -->
-
     <!-- build:js scripts/plugins.js -->
     <script src="../bower_components/bootstrap/js/affix.js"></script>
     <script src="../bower_components/bootstrap/js/alert.js"></script>
@@ -97,12 +161,9 @@
     <script src="../bower_components/bootstrap/js/collapse.js"></script>
     <script src="../bower_components/bootstrap/js/tab.js"></script>
     <!-- endbuild -->
-
-
-
     <!-- build:js scripts/main.js -->
     <script src="scripts/main.js"></script>
-    <!-- endbuild -->
-</body>
+    <script src="/js/jqBootstrapValidation.js"></script>   
+    <!-- endbuild --></body>
 
 </html>

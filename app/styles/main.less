@@ -49,3 +49,141 @@
 // Utility classes
 @import "bower_components/bootstrap/less/utilities.less";
 @import "bower_components/bootstrap/less/responsive-utilities.less";
+
+#enviar{
+  background-color: @button-bg;
+  font: 'Shojumaru', 18px, cursive;
+  text-align: center; 
+  width: 200px;
+  height: 50px;
+  margin-top: 20px;
+  margin-left: auto;
+}
+
+#enviar:hover{
+	background-color: #003333;
+  color: white;
+  opacity: 0.8;
+}
+
+// Add CSS Customizations to your theme here.
+h1, h2, h3, h4, h5, h6{
+   color: #003333;
+   padding-top: 10px;
+   padding-bottom: 10px;
+}
+i{
+  font-size: 15px;
+  margin-left: 20px; 
+}
+#cint{
+  background-repeat: repeat-x;
+  margin-top: 0px;
+  width: 100%;
+  box-shadow: 0 0 50px 10px;
+}
+img:hover{
+  opacity: 0.7;
+}
+/*.sprite{
+ box-shadow: 0 0 50px 10px;
+}*/
+h1{
+	font-family: 'Shojumaru', cursive;
+  color: #003333;
+  margin: 0 auto;
+}
+h2{
+  margin-top: 0;
+  background-color: @bg-h2;
+  color:			@text-h2;
+  text-align: center;
+}
+h3{
+  text-align: center;
+}
+.navbar{
+  position: relative;
+  font-family: 'Pacifico', cursive;
+  font-size: 20px;
+}
+.navbar-inverse{
+background-color: #561010;//#AA3939;
+}
+.navbar-inverse .navbar-nav > li > a{
+  border-bottom: 2px solid black;
+}
+.form-control {
+  box-shadow:0 0 0 0;    
+    transition: box-shadow 1s, transform 1s;
+}
+.form-control:focus{
+  box-shadow: 0px 0px 40px 5px red;
+}
+.zoomIt{
+  display:block!important;//cambiar a Block
+  visibility: 0;
+  -webkit-transition:-webkit-transform 1s ease-out;
+  -moz-transition:-moz-transform 1s ease-out;
+  -o-transition:-o-transform 1s ease-out;
+  -ms-transition:-ms-transform 1s ease-out;
+  transition:transform 1s ease-out;
+  margin: 0 auto;
+  box-shadow: 10px 10px 10px 0;
+};
+.zoomIt:hover{
+  z-index: 0;
+  -moz-transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+  -o-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  transform: scale(1.1);
+  -webkit-transition:rotate(-360)
+};
+/* ---------------------------------------------------------------------------------------------
+Sticky footer styles ---->copiado de los ejemplos definidos el la web de bootstrap:
+http://getbootstrap.com/examples/sticky-footer-navbar
+------------------------------------------------------------------------------------------------- */
+html {
+  position: relative;
+  min-height: 100%;
+}
+body {
+  /* Margin bottom by footer height */
+  background: #A5C663;
+  background-size: 100% 100%;
+  background-attachment: fixed;
+  margin-bottom: 60px;
+}
+footer { 
+  position: absolute;
+  font-family: 'Pacifico', cursive;
+  bottom: 0;
+  width: 100%;
+  /* Set the fixed height of the footer here */
+  height: 70px;
+  color: @gray-dark;
+  background-color: @footer-bg;
+  ul{padding: 0px;}
+}
+.navbar>a #logo{
+  font-family: 'Shojumaru', cursive;
+}
+
+/*Iconos para redes sociales, mediante un sprite*/
+.social-icons { background: url('../images/sprites.png') no-repeat; list-style:none;float:left;}
+.digg { width: 72px; height: 72px; background-position: 0 0; }
+.dribbble { width: 72px; height: 72px; background-position: 0 -73px; }
+.email { width: 72px; height: 72px; background-position: 0 -146px; }
+.facebook { width: 72px; height: 72px; background-position: 0 -219px; }
+.flickr { width: 72px; height: 72px; background-position: 0 -292px; }
+.forrst { width: 72px; height: 72px; background-position: 0 -365px; }
+.googleplus { width: 72px; height: 72px; background-position: 0 -438px; }
+.linkedin { width: 72px; height: 72px; background-position: 0 -511px; }
+.pinterest { width: 72px; height: 72px; background-position: 0 -584px; }
+.rss { width: 72px; height: 72px; background-position: 0 -657px; }
+.share { width: 72px; height: 72px; background-position: 0 -730px; }
+.skype { width: 72px; height: 72px; background-position: 0 -803px; }
+.tumblr { width: 72px; height: 72px; background-position: 0 -876px; }
+.twitter { width: 72px; height: 72px; background-position: 0 -949px; }
+.youtube { width: 72px; height: 72px; background-position: 0 -1022px; }
