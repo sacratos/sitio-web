@@ -6503,11 +6503,30 @@ i {
   font-size: 15px;
   margin-left: 20px;
 }
-#cint {
+.error {
+  font-size: 12px;
+  margin: 5px auto;
+  color: red;
+  font-family: verdana, 12px;
+}
+.row {
+  margin-top: 10px;
+}
+.cint {
   background-repeat: repeat-x;
-  margin-top: 0px;
-  width: 100%;
-  box-shadow: 0 0 50px 10px;
+  margin: auto auto;
+  box-shadow: 0 0 50px 7px;
+  width: 30px;
+  height: 100px;
+  /* Safari */
+  transition: width 2s;
+}
+.cint:hover {
+  width: 700px;
+  transition-timing-function: ease-out;
+}
+.img-rounded {
+  padding-bottom: 10px;
 }
 img:hover {
   opacity: 0.7;
@@ -6528,6 +6547,9 @@ h2 {
 }
 h3 {
   text-align: center;
+}
+legend {
+  padding: 20px 0;
 }
 .navbar {
   position: relative;
@@ -6579,6 +6601,7 @@ body {
 }
 footer {
   position: absolute;
+  margin-top: 10px;
   font-family: 'Pacifico', cursive;
   bottom: 0;
   width: 100%;
@@ -6593,84 +6616,70 @@ footer ul {
 .navbar > a #logo {
   font-family: 'Shojumaru', cursive;
 }
-/*Iconos para redes sociales, mediante un sprite*/
-.social-icons {
-  background: url('../images/sprites.png') no-repeat;
-  list-style: none;
-  float: left;
+.sprite {
+  background-image: url(../images/cinturones/cintosprites.png);
+  background-repeat: repeat-x;
+  display: block;
+  width: 700px;
+  height: 100px;
 }
-.digg {
-  width: 72px;
-  height: 72px;
-  background-position: 0 0;
+.blanco {
+  width: 5px;
+  height: 40px;
+  background-image: url(../images/cinturones/cintosprites.png);
 }
-.dribbble {
-  width: 72px;
-  height: 72px;
-  background-position: 0 -73px;
+.blanco-amarillo {
+  width: 5px;
+  height: 40px;
+  background: url(../images/cinturones/cintosprites.png) 0px -40px;
 }
-.email {
-  width: 72px;
-  height: 72px;
-  background-position: 0 -146px;
+.amarillo {
+  width: 5px;
+  height: 40px;
+  background: url(../images/cinturones/cintosprites.png) 0px -80px;
 }
-.facebook {
-  width: 72px;
-  height: 72px;
-  background-position: 0 -219px;
+.amarillo-naranja {
+  width: 5px;
+  height: 40px;
+  background: url(../images/cinturones/cintosprites.png) 0px -120px;
 }
-.flickr {
-  width: 72px;
-  height: 72px;
-  background-position: 0 -292px;
+.naranja {
+  width: 5px;
+  height: 40px;
+  background: url(../images/cinturones/cintosprites.png) 0px -160px;
 }
-.forrst {
-  width: 72px;
-  height: 72px;
-  background-position: 0 -365px;
+.naranja-verde {
+  width: 5px;
+  height: 40px;
+  background: url(../images/cinturones/cintosprites.png) 0px -200px;
 }
-.googleplus {
-  width: 72px;
-  height: 72px;
-  background-position: 0 -438px;
+.verde {
+  width: 5px;
+  height: 40px;
+  background: url(../images/cinturones/cintosprites.png) 0px -240px;
 }
-.linkedin {
-  width: 72px;
-  height: 72px;
-  background-position: 0 -511px;
+.verde-azul {
+  width: 5px;
+  height: 40px;
+  background: url(../images/cinturones/cintosprites.png) 0px -280px;
 }
-.pinterest {
-  width: 72px;
-  height: 72px;
-  background-position: 0 -584px;
+.azul {
+  width: 5px;
+  height: 40px;
+  background: url(../images/cinturones/cintosprites.png) 0px -320px;
 }
-.rss {
-  width: 72px;
-  height: 72px;
-  background-position: 0 -657px;
+.azul-marron {
+  width: 5px;
+  height: 40px;
+  background: url(../images/cinturones/cintosprites.png) 0px -360px;
 }
-.share {
-  width: 72px;
-  height: 72px;
-  background-position: 0 -730px;
+.marron {
+  width: 5px;
+  height: 40px;
+  background: url(../images/cinturones/cintosprites.png) 0px -400px;
 }
-.skype {
-  width: 72px;
-  height: 72px;
-  background-position: 0 -803px;
-}
-.tumblr {
-  width: 72px;
-  height: 72px;
-  background-position: 0 -876px;
-}
-.twitter {
-  width: 72px;
-  height: 72px;
-  background-position: 0 -949px;
-}
-.youtube {
-  width: 72px;
-  height: 72px;
-  background-position: 0 -1022px;
+.negro {
+  width: 5px;
+  height: 40px;
+  background: url(../images/cinturones/cintosprites.png) 0px -440px;
 }
