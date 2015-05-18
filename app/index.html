@@ -5,18 +5,16 @@
     <meta charset="utf-8">
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1, minimal-ui">
-    <title>bootstrap less2</title>
+    <title>Sitio Web</title>
     <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
-
     <!-- build:css styles/vendor.css -->
     <!-- bower:css -->
     <!-- endbower -->
     <!-- endbuild -->
-
+    <link href='http://fonts.googleapis.com/css?family=Shojumaru|Pacifico' rel='stylesheet' type='text/css'>
     <!-- build:css styles/main.css -->
     <link rel="stylesheet" href="styles/main.css">
     <!-- endbuild -->
-
     <!-- build:js scripts/vendor/modernizr.js -->
     <script src="../bower_components/modernizr/modernizr.js"></script>
     <!-- endbuild -->
@@ -26,7 +24,7 @@
     <!--[if lt IE 10]>
       <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
-<div class="navbar navbar-inverse">
+    <div class="navbar navbar-inverse">
         <div class="container">
             <div class="navbar-header">
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
@@ -40,7 +38,7 @@
             </div>
             <div class="navbar-collapse collapse">
                 <ul class="nav navbar-nav">
-                    <li>
+                    <li class="active">
                         <a href="index.html">Inicio</a>
                     </li>
                     <li class="dropdown">
@@ -59,7 +57,7 @@
                     <li>
                         <a href="cinturones.html">Cinturones</a>
                     </li>
-                    <li class="active">
+                    <li>
                         <a href="formulario.html">Contacto</a>
                     </li>
                 </ul>
@@ -68,84 +66,99 @@
         </div>
     </div>
     <div class="container">
-        <h1>Formulario</h1>
-        <form class="form-horizontal" id="formulario" name="formulario">
-            <fieldset>
-                <!-- Form Name -->
-                <legend>Informacion de contacto</legend>
-                <!-- Text input NOMBRE-->
-                <div class="form-group">
-                    <label class="control-label" for="nombre">Nombre</label>
-                    <span class="required"> *</span>
-                    <div class="nombre">
-                        <input id="nombre" name="nombre" placeholder="nombre" class="form-control input-md" type="text" required>
+        <h1>Karate Hispanidad</h1>
+        <div class="row">
+            <div class="container">
+                <div id="carousel" class="carousel slide" data-ride="carousel">
+                    <!-- Indicators -->
+                    <ol class="carousel-indicators">
+                        <li data-target="#carousel" data-slide-to="0" class="active"></li>
+                        <li data-target="#carousel" data-slide-to="1"></li>
+                        <li data-target="#carousel" data-slide-to="2"></li>
+                    </ol>
+                    <div class="carousel-inner">
+                        <div class="item active">
+                            <img src="images/gimnasio2.jpg" alt="karate">
+                        </div>
+                        <div class="item">
+                            <img src="images/gimnasio3.jpg" alt="karate">
+                        </div>
+                        <div class="item">
+                            <img src="images/gimnasio1.jpg" alt="karate">
+                        </div>
                     </div>
+                    <!-- Controls -->
+                    <a class="left carousel-control" href="#carousel" data-slide="prev">
+                        <span class="glyphicon glyphicon-chevron-left"></span>
+                    </a>
+                    <a class="right carousel-control" href="#carousel" data-slide="next">
+                        <span class="glyphicon glyphicon-chevron-right"></span>
+                    </a>
                 </div>
-                <!-- Text input APELLIDOS-->
-                <div class="form-group">
-                    <label class="control-label" for="apellidos">Apellidos</label>
-                    <span class="required"> *</span>
-                    <div class="">
-                        <input id="apellidos" name="apellidos" placeholder="apellidos" class="form-control input-md" type="text" required>
-                    </div>
-                </div>
-                <!-- Text input TELEFONO-->
-                <div class="form-group">
-                    <label class="control-label" for="telefono">Telefono</label>
-                    <div class="">
-                        <input id="telefono" name="telefono" placeholder="telefono" maxlength="9" class="form-control input-md" type="text" required>
-                    </div>
-                </div>
-                <!-- Text input EMAIL-->
-                <div class="form-group">
-                    <label class="control-label" for="email1">Email</label>
-                    <span class="required"> *</span>
-                    <div class="">
-                        <input id="email1" name="email1" placeholder="email" class="form-control input-md" type="text" required>
-                    </div>
-                </div>
-                <!-- Text input REPETIR EMAIL-->
-                <div class="form-group">
-                    <label class="control-label" for="email2">Repetir Email</label>
-                    <span class="required"> *</span>
-                    <div class="">
-                        <input id="repemail" name="email2" placeholder="repetirEmail" class="form-control input-md" type="text">
-                    </div>
-                </div>
-                <!--BOTON ENVIAR >-->
-                <div class="form-group">
-                    <div class="">
-                        <button type="submit" id="enviar" name="enviar" class="btn btn-default">ENVIAR</button>
-                    </div>
-                </div>
-            </fieldset>
-            <p class="info"><strong>Si quieres consultarnos, rellena este formulario y te enviaremos detalles sobre las clases, ciclos, etc.</strong></p>
-        </form>
+            </div>
+        </div>
+    </div>
+    <!--asdfasdfasdfasdfc-->
+    <div>
+        <h2>¿Conoces el karate?</h2>
     </div>
     <div class="container">
         <div class="row">
-            <div class="col-md-5 col-xs-4">
+            <div class="col-sm-4">
+                <p>El <strong>Karate</strong> es la forma japonesa de una técnica de luchas sin armas, con las manos y los pies libres, es un método de ataque y defensa que se apoya exclusivamente, en la utilización racional de las posibilidades que la naturaleza ha otorgado a nuestro cuerpo humano. </p>
             </div>
-            <img src="images/Oso.jpg" alt="oso del formulario">
+            <div class="col-sm-4">
+                <p>Consiste en un conjunto de golpes con las manos y los pies, estos golpes se dan concretamente sobre puntos precisos y vulnerables del cuerpo del adversario en su forma y característica. El karate es una esgrima de brazos y piernas, sirviendo ambas extremidades indiferentemente tanto para detener un ataque como para atacar.</p>
+            </div>
+            <div class="col-sm-4">
+                <p>Se completa con unas técnicas de luxaciones, proyecciones y caídas. De hecho el karate comporta todos los medios para poner fuera de combate a un asaltante ya que nada está prohibido. No obstante durante los entrenamientos, para que sea posible el ejercicio con el compañero, los golpes se efectúan con toda la energía, pero se detienen antes del contacto.
+                </p>
+            </div>
+            <div class="col-sm-12">
+                <p>
+                    El karate-do de hoy en día florece como deporte de arte de defensa personal. En estos últimos años el karate tiene gran popularidad como método para inculcar entre sus practicantes la cortesía, el respeto, la humildad, la disciplina y como método para conservar la salud entre la gente.
+                </p>
+            </div>
         </div>
+    </div>
+    <div>
+        <h2>Nuestras ofertas</h2>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-4 col-xs-4">
+                <h3>Multiaventura</h3>
+                <a href="#"><img src="images/luchador.jpg" alt="Oferta Rafting" class="img-responsive" /></a>
+                <p>Combina 2 de nuestras actividades más interesantes: <a href="#">kempo + lucha o acrobacias.</a></p>
+            </div>
+            <div class="col-sm-4 col-xs-4">
+                <h3>Conoce la historia</h3>
+                <a href="http://es.wikipedia.org/wiki/Karate#Historia_moderna_del_karate_en_el_Jap.C3.B3n_y_antecedentes_en_Okinawa_y_China"><img src="images/funakoshi.jpg" alt="Oferta Rafting" class="img-responsive" /></a>
+                <p>Si quieres descubrir la historia del karate, <a href="http://es.wikipedia.org/wiki/Karate#Historia_moderna_del_karate_en_el_Jap.C3.B3n_y_antecedentes_en_Okinawa_y_China" target="_blank">haz click aquí</a>.</p>
+            </div>
+            <div class="col-sm-4 col-xs-4">
+                <h3>Interesados</h3>
+                <a href="formulario.html"><img src="images/tiger.gif" alt="Defensa personal" class="img-responsive" /></a>
+                <p>Si estas interesado, puedes contactar con nosotros.</br><a href="formulario.html">ingresa</a> con tu correo.</p>
+            </div>
+        </div>
+    </div>
     </div>
     <!-- /container -->
     <footer>
         <div class="container">
-
             <a href="#"><img name="sprite" src="../icons/facebook.png"></a>
             <a href="#"><img name="sprite" src="../icons/linkedin.png"></a>
             <a href="#"><img name="sprite" src="../icons/twitter.png"></a>
             
             <p class="pull-right">Copyright @ 2014 | Website realizada por
                 <a href="https://github.com/sacratos/sitio-web">sacratos :3</a></p>
-            
         </div>
     </footer>
     <!-- build:js scripts/vendor.js -->
     <!-- bower:js -->
     <script src="../bower_components/jquery/dist/jquery.js"></script>
-    <script src="../bower_components/jqBootstrapValidation/dist/jqBootstrapValidation-1.3.7.min.js"></script>
+    <script src="../bower_components/jquery-validate/dist/jquery.validate.js"></script>
     <!-- endbower -->
     <!-- endbuild -->
     <!-- build:js scripts/plugins.js -->
@@ -163,7 +176,8 @@
     <script src="../bower_components/bootstrap/js/tab.js"></script>
     <!-- endbuild -->
     <!-- build:js scripts/main.js -->
-    <script src="scripts/main.js"></script>   
-    <!-- endbuild --></body>
+    <script src="scripts/main.js"></script>
+    <!-- endbuild -->
+</body>
 
 </html>

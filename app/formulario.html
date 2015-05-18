@@ -1,0 +1,168 @@
+<!doctype html>
+<html class="no-js" lang="">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimal-ui">
+    <title>Formulario</title>
+    <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+    <!-- build:css styles/vendor.css -->
+    <!-- bower:css -->
+    <!-- endbower -->
+    <!-- endbuild -->
+    <link href='http://fonts.googleapis.com/css?family=Shojumaru|Pacifico' rel='stylesheet' type='text/css'>
+    <!-- build:css styles/main.css -->
+    <link rel="stylesheet" href="styles/main.css">
+    <!-- endbuild -->
+    <!-- build:js scripts/vendor/modernizr.js -->
+    <script src="../bower_components/modernizr/modernizr.js"></script>
+    <!-- endbuild -->
+</head>
+
+<body>
+    <!--[if lt IE 10]>
+      <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
+    <div class="navbar navbar-inverse">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="index.html">
+                    <span id="logo">C  K  H  - Club de Karate Hispanidad</span>
+                </a>
+            </div>
+            <div class="navbar-collapse collapse">
+                <ul class="nav navbar-nav">
+                    <li>
+                        <a href="index.html">Inicio</a>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Actividades
+                            <b class="caret"></b>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a href="katas.html">Katas</a>
+                            </li>
+                            <li>
+                                <a href="tecnica.html">Tecnica</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="cinturones.html">Cinturones</a>
+                    </li>
+                    <li class="active">
+                        <a href="formulario.html">Contacto</a>
+                    </li>
+                </ul>
+            </div>
+            <!--/.navbar-collapse -->
+        </div>
+    </div>
+    <div class="container">
+        <h1>Formulario</h1>
+        <div class="row">
+            <form class="form-horizontal" id="formulario" name="formulario" novalidate>
+                <fieldset>
+                    <!-- Form Name -->
+                    <legend>Informacion de contacto</legend>
+                    <!-- Text input NOMBRE-->
+                    <div class="form-group">
+                        <label for="nombre" class="col-sm-2 control-label">Nombre</label>
+                        <div class="col-sm-8">
+                            <input type="text" class="form-control" id="nombre" name="nombre" placeholder="Introduce tu nombre">
+                        </div>
+                    </div>
+                    <!-- Text input APELLIDOS-->
+                    <div class="form-group">
+                        <label for="apellidos" class="col-sm-2 control-label">Apellidos</label>
+                        <div class="col-sm-8">
+                            <input type="text" class="form-control" id="apellidos" name="apellidos" placeholder="Introduce tus apellidos">
+                        </div>
+                    </div>
+                    <!-- Text input TELEFONO-->
+                    <div class="form-group">
+                        <label for="telefono" class="col-sm-2 control-label">Telefono</label>
+                        <div class="col-sm-8">
+                            <input type="text" class="form-control" id="telefono" name="telefono" placeholder="Introduce tu telefono">
+                        </div>
+                    </div>
+                    
+                        <!-- Text input EMAIL-->
+                    <div class="form-group">
+                        <label for="email" class="col-sm-2 control-label">Email</label>
+                        <div class="col-sm-8">
+                            <input type="email" class="form-control" id="email" name="email" placeholder="Email">
+                        </div>
+                    </div>
+
+                    <!-- Text input REPETIR EMAIL-->
+                    <div class="form-group">
+                        <label for="email2" class="col-sm-2 control-label">Repetir Email</label>
+                        <div class="col-sm-8">
+                            <input type="email" class="form-control" id="email2" name="email2" placeholder="Repite el email">
+                        </div>
+                    </div>
+                    
+                        <!--BOTON ENVIAR >-->
+                    <div class="form-group">
+                        <div class="col-sm-offset-2 col-sm-10">
+                            <button type="submit" id="enviar" name="enviar" class="btn btn-primary btn-lg">ENVIAR</button>
+                        </div>
+                    </div>
+                </fieldset>
+                <p class="info col-sm-offset-2 col-sm-10"><strong>Si quieres consultarnos, rellena este formulario y te enviaremos detalles sobre las clases, ciclos, etc.</strong></p>
+            </form>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-5 col-xs-4">
+            </div>
+            <img src="images/Oso.jpg" alt="oso del formulario" class="img-rounded">
+        </div>
+    </div>
+    <!-- /container -->
+    <footer>
+        <div class="container">
+            <a href="#"><img name="sprite" src="../icons/facebook.png"></a>
+            <a href="#"><img name="sprite" src="../icons/linkedin.png"></a>
+            <a href="#"><img name="sprite" src="../icons/twitter.png"></a>
+            <p class="pull-right">Copyright @ 2014 | Website realizada por
+                <a href="https://github.com/sacratos/sitio-web">sacratos :3</a></p>
+        </div>
+    </footer>
+    <!-- build:js scripts/vendor.js -->
+    <!-- bower:js -->
+    <script src="../bower_components/jquery/dist/jquery.js"></script>
+    <script src="../bower_components/jquery-validate/dist/jquery.validate.js"></script>
+    <!-- endbower -->
+    <!-- endbuild -->
+    <!-- build:js scripts/plugins.js -->
+    <script src="../bower_components/bootstrap/js/affix.js"></script>
+    <script src="../bower_components/bootstrap/js/alert.js"></script>
+    <script src="../bower_components/bootstrap/js/dropdown.js"></script>
+    <script src="../bower_components/bootstrap/js/tooltip.js"></script>
+    <script src="../bower_components/bootstrap/js/modal.js"></script>
+    <script src="../bower_components/bootstrap/js/transition.js"></script>
+    <script src="../bower_components/bootstrap/js/button.js"></script>
+    <script src="../bower_components/bootstrap/js/popover.js"></script>
+    <script src="../bower_components/bootstrap/js/carousel.js"></script>
+    <script src="../bower_components/bootstrap/js/scrollspy.js"></script>
+    <script src="../bower_components/bootstrap/js/collapse.js"></script>
+    <script src="../bower_components/bootstrap/js/tab.js"></script>
+    <!-- endbuild -->
+    <!-- build:js scripts/formulario.js -->
+    <script src="scripts/main.js"></script>
+    <script src="scripts/formulario.js"></script>
+    <script src="scripts/metodos_validate.js"></script>
+    <!-- endbuild -->
+</body>
+
+</html>
