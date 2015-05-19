@@ -107,7 +107,8 @@ gulp.task('watch', ['connect'], function () {
     'app/*.html',
     '.tmp/styles/**/*.css',
     'app/scripts/**/*.js',
-    'app/images/**/*'
+    'app/images/**/*',
+    'app/icons/**/*'
   ]).on('change', $.livereload.changed);
   gulp.watch('app/styles/**/*.less', ['styles']);
   gulp.watch('bower.json', ['wiredep']);
