@@ -1,3 +1,23 @@
+.image-source-link {
+  color: #98C3D1;
+}
+.mfp-with-zoom .mfp-container,
+.mfp-with-zoom.mfp-bg {
+  opacity: 0;
+  -webkit-backface-visibility: hidden;
+  /* ideally, transition speed should match zoom duration */
+  transition: all 0.3s ease-out;
+}
+.mfp-with-zoom.mfp-ready .mfp-container {
+  opacity: 1;
+}
+.mfp-with-zoom.mfp-ready.mfp-bg {
+  opacity: 0.8;
+}
+.mfp-with-zoom.mfp-removing .mfp-container,
+.mfp-with-zoom.mfp-removing.mfp-bg {
+  opacity: 0;
+}
 /*! normalize.css v3.0.2 | MIT License | git.io/normalize */
 html {
   font-family: sans-serif;
@@ -1104,7 +1124,6 @@ img {
 .thumbnail a > img,
 .carousel-inner > .item > img,
 .carousel-inner > .item > a > img {
-  display: block;
   max-width: 100%;
   height: auto;
 }
@@ -1118,7 +1137,6 @@ img {
   border: 1px solid #dddddd;
   border-radius: 4px;
   transition: all 0.2s ease-in-out;
-  display: inline-block;
   max-width: 100%;
   height: auto;
 }
@@ -1254,7 +1272,7 @@ h2,
 }
 h3,
 .h3 {
-  font-size: 26px;
+  font-size: 14;
 }
 h4,
 .h4 {
@@ -6546,7 +6564,7 @@ h2 {
   text-align: center;
 }
 h3 {
-  text-align: center;
+  margin-left: 10%;
 }
 legend {
   padding: 20px 0;
