@@ -6504,7 +6504,6 @@ i {
   margin-left: 20px;
 }
 .error {
-  transition: 2s;
   font-size: 12px;
   margin: 5px auto;
   color: #561010;
@@ -6520,10 +6519,10 @@ i {
   width: 30px;
   height: 100px;
   /* Safari */
-  transition: width 2s;
+  transition: width 1s;
 }
 .cint:hover {
-  width: 700px;
+  width: 750px;
   transition-timing-function: ease-out;
 }
 .img-rounded {
