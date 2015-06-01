@@ -83,8 +83,15 @@ $(document).ready(function() {
     });
 });
 $('.leermas').toggle();
+$('.aprendo').toggle();
 $('#leermas').on('click', function() {
     $(this).toggle();
     /* Act on the event */
     $('.leermas').show();
+});
+$('.cint').on('mouseover', function() {
+    $('.aprendo').fadeIn('slow');
+})
+.on('mouseleave',function(){
+    $('.aprendo').toggle('slow');
 });

@@ -1100,12 +1100,12 @@ textarea {
   line-height: inherit;
 }
 a {
-  color: purple;
+  color: #407f7f;
   text-decoration: none;
 }
 a:hover,
 a:focus {
-  color: #340033;
+  color: #264c4c;
   text-decoration: underline;
 }
 a:focus {
@@ -3289,7 +3289,7 @@ fieldset[disabled] .btn-danger.active {
   background-color: #ffffff;
 }
 .btn-link {
-  color: purple;
+  color: #407f7f;
   font-weight: normal;
   border-radius: 0;
 }
@@ -3309,7 +3309,7 @@ fieldset[disabled] .btn-link {
 }
 .btn-link:hover,
 .btn-link:focus {
-  color: #340033;
+  color: #264c4c;
   text-decoration: underline;
   background-color: transparent;
 }
@@ -3872,7 +3872,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 .nav .open > a:hover,
 .nav .open > a:focus {
   background-color: #eeeeee;
-  border-color: purple;
+  border-color: #407f7f;
 }
 .nav .nav-divider {
   height: 1px;
@@ -4587,7 +4587,7 @@ fieldset[disabled] .navbar-inverse .btn-link:focus {
   padding: 6px 12px;
   line-height: 1.42857143;
   text-decoration: none;
-  color: purple;
+  color: #407f7f;
   background-color: #ffffff;
   border: 1px solid #dddddd;
   margin-left: -1px;
@@ -4607,7 +4607,7 @@ fieldset[disabled] .navbar-inverse .btn-link:focus {
 .pagination > li > span:hover,
 .pagination > li > a:focus,
 .pagination > li > span:focus {
-  color: #340033;
+  color: #264c4c;
   background-color: #eeeeee;
   border-color: #dddddd;
 }
@@ -4803,7 +4803,7 @@ a.badge:focus {
 }
 .list-group-item.active > .badge,
 .nav-pills > .active > a > .badge {
-  color: purple;
+  color: #407f7f;
   background-color: #ffffff;
 }
 .list-group-item > .badge {
@@ -4872,7 +4872,7 @@ a.badge:focus {
 a.thumbnail:hover,
 a.thumbnail:focus,
 a.thumbnail.active {
-  border-color: purple;
+  border-color: #407f7f;
 }
 .thumbnail .caption {
   padding: 9px;
@@ -6521,6 +6521,14 @@ i {
   font-size: 15px;
   margin-left: 20px;
 }
+.img-btn {
+  margin-bottom: 20px;
+}
+.bg-col {
+  background-color: #354f00;
+  padding-top: 0 important!;
+  padding-bottom: 30px;
+}
 .error {
   font-size: 12px;
   margin: 5px auto;
@@ -6531,20 +6539,21 @@ i {
   margin-top: 10px;
 }
 .cint {
-  background-repeat: repeat-x;
+  background-repeat: no-repeat;
   margin: auto auto;
-  box-shadow: 0 0 50px 7px;
-  width: 30px;
+  box-shadow: 0 0 50px 0px;
+  width: 50%;
   height: 100px;
   /* Safari */
-  transition: width 1s;
+  transition: height 1s,width 1s;
 }
 .cint:hover {
-  width: 750px;
+  width: 100%;
+  height: 40px;
   transition-timing-function: ease-out;
 }
-.img-rounded {
-  padding-bottom: 10px;
+.img-circle .img-rounded {
+  margin-bottom: 200px;
 }
 /*img:hover{
   opacity: 0.7;
@@ -6564,10 +6573,13 @@ h2 {
   text-align: center;
 }
 h3 {
-  margin-left: 10%;
+  text-align: center;
 }
 legend {
   padding: 20px 0;
+}
+.pbottom {
+  margin: 30px 70px 5px 70px;
 }
 .navbar {
   position: relative;
@@ -6642,62 +6654,62 @@ footer ul {
   height: 100px;
 }
 .blanco {
-  width: 5px;
+  width: 50%;
   height: 40px;
   background-image: url(../images/cinturones/cintosprites.png);
 }
 .blanco-amarillo {
-  width: 5px;
+  width: 50%;
   height: 40px;
   background: url(../images/cinturones/cintosprites.png) 0px -40px;
 }
 .amarillo {
-  width: 5px;
+  width: 50%;
   height: 40px;
   background: url(../images/cinturones/cintosprites.png) 0px -80px;
 }
 .amarillo-naranja {
-  width: 5px;
+  width: 50%;
   height: 40px;
   background: url(../images/cinturones/cintosprites.png) 0px -120px;
 }
 .naranja {
-  width: 5px;
+  width: 50%;
   height: 40px;
   background: url(../images/cinturones/cintosprites.png) 0px -160px;
 }
 .naranja-verde {
-  width: 5px;
+  width: 50%;
   height: 40px;
   background: url(../images/cinturones/cintosprites.png) 0px -200px;
 }
 .verde {
-  width: 5px;
+  width: 50%;
   height: 40px;
   background: url(../images/cinturones/cintosprites.png) 0px -240px;
 }
 .verde-azul {
-  width: 5px;
+  width: 50%;
   height: 40px;
   background: url(../images/cinturones/cintosprites.png) 0px -280px;
 }
 .azul {
-  width: 5px;
+  width: 50%;
   height: 40px;
   background: url(../images/cinturones/cintosprites.png) 0px -320px;
 }
 .azul-marron {
-  width: 5px;
+  width: 50%;
   height: 40px;
   background: url(../images/cinturones/cintosprites.png) 0px -360px;
 }
 .marron {
-  width: 5px;
+  width: 50%;
   height: 40px;
   background: url(../images/cinturones/cintosprites.png) 0px -400px;
 }
 .negro {
-  width: 5px;
+  width: 50%;
   height: 40px;
   background: url(../images/cinturones/cintosprites.png) 0px -440px;
 }
