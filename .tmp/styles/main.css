@@ -6507,6 +6507,9 @@ button.close {
   color: white;
   opacity: 0.8;
 }
+#myModal {
+  text-align: left;
+}
 h1,
 h2,
 h3,
@@ -6521,8 +6524,12 @@ i {
   font-size: 15px;
   margin-left: 20px;
 }
-.img-btn {
+img {
   margin-bottom: 20px;
+}
+.pbottom {
+  margin: 20px 10px;
+  font-size: 10px;
 }
 .bg-col {
   background-color: #354f00;
@@ -6577,9 +6584,6 @@ h3 {
 }
 legend {
   padding: 20px 0;
-}
-.pbottom {
-  margin: 30px 70px 5px 70px;
 }
 .navbar {
   position: relative;
@@ -6642,6 +6646,19 @@ footer {
 }
 footer ul {
   padding: 0px;
+}
+.list-group-item {
+  background: #354f00;
+  font-family: 'Shojumaru', cursive;
+  text-align: center;
+}
+.list-group-item a {
+  color: #D4EE9F;
+  opacity: 0.8;
+}
+.list-group-item a:hover {
+  font-size: 17px;
+  transition: .5s;
 }
 .navbar > a #logo {
   font-family: 'Shojumaru', cursive;

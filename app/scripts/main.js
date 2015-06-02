@@ -87,11 +87,14 @@ $('.aprendo').toggle();
 $('#leermas').on('click', function() {
     $(this).toggle();
     /* Act on the event */
-    $('.leermas').show();
+    $('.leermas').show('400');
 });
 $('.cint').on('mouseover', function() {
     $('.aprendo').fadeIn('slow');
 })
 .on('mouseleave',function(){
     $('.aprendo').toggle('slow');
+});
+$('li a').click(function (e) {
+    $('#myModal img').attr('src', $(this).attr('data-img-url'));
 });

@@ -65,7 +65,9 @@
   color: white;
   opacity: 0.8;
 }
-
+#myModal{
+  text-align: left;
+}
 // Add CSS Customizations to your theme here.
 h1, h2, h3, h4, h5, h6{
    color: #003333;
@@ -76,8 +78,14 @@ i{
   font-size: 15px;
   margin-left: 20px; 
 }
-.img-btn{
+img{
   margin-bottom: 20px;
+}
+
+.pbottom{
+  margin: 20px 10px;
+  font-size: 10px;
+
 }
 .bg-col{
   background-color: @fondo1;
@@ -134,10 +142,7 @@ h3{
 legend{
   padding: 20px 0;
 }
-.pbottom{
-  margin:30px 70px 5px 70px;
 
-}
 .box-shadow(@shadow: 0 1px 3px rgba(0,0,0,.25)) {
   -webkit-box-shadow: @shadow; // iOS <4.3 & Android <4.1
           box-shadow: @shadow;
@@ -207,7 +212,13 @@ footer {
   background-color: @footer-bg;
   ul{padding: 0px;}
 }
-
+.list-group-item{
+  background: @fondo1;
+  font-family: @font-family;
+  text-align: center;
+  a{color: #D4EE9F;opacity:0.8;}
+  a:hover{font-size: 17px;transition:.5s;}
+}
 .navbar>a #logo{
   font-family: 'Shojumaru', cursive;
 }
