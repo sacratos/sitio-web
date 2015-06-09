@@ -1,3 +1,4 @@
+'use strict';
 $('#formulario').validate({
     onkeyup: false,
     onfocusout: false,
@@ -45,7 +46,6 @@ $('#formulario').validate({
         },
         email2: {
             required: 'Escribe tu email',
-            email: 'Por favor, escribe una dirección de correo válida.',
             equalTo: 'Los emails no coinciden.',
         },
 
@@ -54,47 +54,22 @@ $('#formulario').validate({
 $('label').css('font-family', 'Shojumaru')
     .css('font-size', '20px')
     .css('color', '#003333');
-/*var player =  iframe.getElementsByTagName('iframe');
-player.mute();*/
-$(document).ready(function() {
-    $('.zoom-gallery').magnificPopup({
-        delegate: 'a',
-        type: 'image',
-        closeOnContentClick: false,
-        closeBtnInside: false,
-        mainClass: 'mfp-with-zoom mfp-img-mobile',
-        image: {
-            verticalFit: true,
-            titleSrc: function(item) {
-                return item.el.attr('title') + ' &middot; <a class="image-source-link" href="'+item.el.attr('data-source')+'" target="_blank">image source</a>';
-            }
-        },
-        gallery: {
-            enabled: true
-        },
-        zoom: {
-            enabled: true,
-            duration: 300, // don't foget to change the duration also in CSS
-            opener: function(element) {
-                return element.find('img');
-            }
-        }
-        
-    });
-});
+$('.video').stop();
+
+
 $('.leermas').toggle();
 $('.aprendo').toggle();
-$('#leermas').on('click', function() {
+$('#leermas').on('mousemove', function() {
     $(this).toggle();
     /* Act on the event */
     $('.leermas').show('400');
 });
-$('.cint').on('mouseover', function() {
+$('.cint').on('click', function() {
+    //var aprendo=$('.aprendo').val();
     $('.aprendo').fadeIn('slow');
-})
-.on('mouseleave',function(){
-    $('.aprendo').toggle('slow');
+}).on('mouseleave',function(){
+    $('.aprendo').fadeOut('fast');
 });
-$('li a').click(function (e) {
+$('li a').click(function() {
     $('#myModal img').attr('src', $(this).attr('data-img-url'));
 });

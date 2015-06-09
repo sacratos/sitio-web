@@ -6527,6 +6527,11 @@ i {
 img {
   margin-bottom: 20px;
 }
+.menulargo {
+  padding-top: 30px;
+  font-size: 30px bold;
+  color: white;
+}
 .pbottom {
   margin: 20px 10px;
   font-size: 10px;
@@ -6584,6 +6589,10 @@ h3 {
 }
 legend {
   padding: 20px 0;
+}
+p.pbottom {
+  text-align: center;
+  color: #ffaaaa;
 }
 .navbar {
   position: relative;
@@ -6647,18 +6656,23 @@ footer {
 footer ul {
   padding: 0px;
 }
-.list-group-item {
+.kato {
   background: #354f00;
   font-family: 'Shojumaru', cursive;
   text-align: center;
 }
-.list-group-item a {
+.kato a {
   color: #D4EE9F;
-  opacity: 0.8;
 }
-.list-group-item a:hover {
+.kato a:hover {
   font-size: 17px;
   transition: .5s;
+}
+.piro {
+  background: #669999;
+  padding: auto auto;
+  text-align: left;
+  color: #003333;
 }
 .navbar > a #logo {
   font-family: 'Shojumaru', cursive;
@@ -6729,4 +6743,6 @@ footer ul {
   width: 50%;
   height: 40px;
   background: url(../images/cinturones/cintosprites.png) 0px -440px;
+  color: white;
+  margin-bottom: 20px;
 }
