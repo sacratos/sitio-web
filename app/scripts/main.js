@@ -1,4 +1,6 @@
-'use strict';
+/*jshint strict:false */
+
+
 $('#formulario').validate({
     onkeyup: false,
     onfocusout: false,
@@ -51,25 +53,25 @@ $('#formulario').validate({
 
     }
 });
-$('label').css('font-family', 'Shojumaru')
-    .css('font-size', '20px')
-    .css('color', '#003333');
-$('.video').stop();
-
-
-$('.leermas').toggle();
-$('.aprendo').toggle();
-$('#leermas').on('mousemove', function() {
-    $(this).toggle();
-    /* Act on the event */
-    $('.leermas').show('400');
-});
-$('.cint').on('click', function() {
-    //var aprendo=$('.aprendo').val();
-    $('.aprendo').fadeIn('slow');
-}).on('mouseleave',function(){
-    $('.aprendo').fadeOut('fast');
-});
-$('li a').click(function() {
-    $('#myModal img').attr('src', $(this).attr('data-img-url'));
+$(document).ready(function() {
+    $('.leermas').toggle();
+    $('.aprendo').toggle();
+    $('label').css('font-family', 'Shojumaru')
+        .css('font-size', '20px')
+        .css('color', '#003333');
+    $('#leermas').on('click', function() {
+        $(this).toggle();
+        /* Act on the event */
+        $('.leermas').show('400');
+    });
+    $('.cint').on('click', function() {
+        //var aprendo=$('.aprendo').val();
+        $('.aprendo').fadeIn('slow');
+    });
+    $('.cint').on('mouseleave', function() {
+        $('.aprendo').fadeOut('fast');
+    });
+    $('li a').click(function() {
+        $('#imagenKata').attr('src', $(this).attr('data-img-url'));
+    });
 });
